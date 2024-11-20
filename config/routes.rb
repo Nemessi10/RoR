@@ -6,5 +6,5 @@ Rails.application.routes.draw do
 
   get 'about', to: 'pages#about'
 
-  delete '/users/delete_all', to: 'users#delete_all', as: 'delete_all'
+  delete '/users/delete_all', to: 'users#delete_all_users', as: 'delete_all'
 end

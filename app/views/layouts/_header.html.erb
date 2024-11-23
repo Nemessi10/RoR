@@ -21,7 +21,7 @@
               <a class="nav-link <%= 'active' if current_page?('/users') %>" href="/users">Показати всіх користувачів</a>
             </li>
             <li class="nav-item">
-              <%= link_to 'Видалити всіх користувачів', delete_all_path, method: :delete, class: "nav-link", data: { confirm: 'Ви впевнені, що хочете видалити всіх користувачів?' } %>
+              <%= link_to 'Видалити всіх користувачів', delete_all_users_path, class: "nav-link", data: { turbo_method: :delete, turbo_confirm: 'Ви впевнені, що хочете видалити всіх користувачів?' } %>
             </li>
           </ul>
         </div>

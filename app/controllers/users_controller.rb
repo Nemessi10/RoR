@@ -58,9 +58,9 @@ class UsersController < ApplicationController
   end
 
   # DELETE /users/delete_all
-  def delete_all_users
-    ::User.delete_all
-    redirect_to root_path, notice: "All users deleted!"
+  def delete_all
+    User.delete_all
+    redirect_to users_path, notice: 'All users have been deleted.'
   end
 
 
